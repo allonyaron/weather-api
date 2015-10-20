@@ -4,6 +4,8 @@ var request = require('request');
 
 var port = process.env.PORT || 3000;
 
+app.use(express.static(__dirname + "/client"));
+
 app.get('/api/weather/:location', function(req,res) {
 	//use open weather map api with city name
 	var uri = "http://api.openweathermap.org/data/2.5/weather?q=" + req.params.location + ",us&units=imperial&appid=7a7876c8bc664c64008cd5bbbb4440c6";
@@ -19,7 +21,7 @@ app.get('/api/weather/:location', function(req,res) {
 });
 
 app.get('/', function(req,res) {
-	res.send('Weather-api');
+	res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(port);
