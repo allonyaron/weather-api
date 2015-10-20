@@ -1,0 +1,23 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "Show weather forecast for office location",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allonyaron/weather-api.git"
+  },
+  "author": "Allon Yaron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allonyaron/weather-api/issues"
+  },
+  "homepage": "https://github.com/allonyaron/weather-api#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "request": "^2.65.0"
+  }
+}
