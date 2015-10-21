@@ -38,12 +38,12 @@
       <div class="col-xs-6">
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h4><img class="img-thumbnail forecast-img" src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" /> <strong>{{ weather.name }}, {{weather.sys.country}}</strong></h4>
+            <h4><img class="img-thumbnail forecast-img" src="http://openweathermap.org/img/w/{{weather.icon}}.png" /> <strong>{{ weather.city }}, {{weather.country}}</strong></h4>
           </div>
           <div class="panel-body">
-            <p>{{weather.weather[0].description}}</p>
-            <p>{{weather.main.temp}}&deg;</p>
-            <p>H:  {{weather.main.temp_max}}&deg; | L:  {{weather.main.temp_min}}&deg;</p>
+            <p>{{weather.description}}</p>
+            <p>{{weather.temp}}&deg;</p>
+            <p>H:  {{weather.maxTemp}}&deg; | L:  {{weather.minTemp}}&deg;</p>
             </div>
           </div>
         </div>
